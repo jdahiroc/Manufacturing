@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order</title>
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="file:///E:fontawesome/css/all.css" />
+  </head>
+  <body>
+    <div class="header"><h1>Order</h1></div>
+
+    <div class="main">
+      <h2>Products</h2>
+
+      <div class="food">
+        <img src="atv.jpg" width="150px" height="100px" />
+        <br />
+        <h3>ATV</h3>
+        <br />
+        <br />
+        <input
+          type="button"
+          value="Order Now"
+          onclick="window.location.href='/Manufacturing/orderlist.php';"
+        />
+      </div>
+      <div class="food">
+        <img src="4x4.jpg" width="150px" height="100px" />
+        <br />
+        <h3>4x4 Cruiser</h3>
+        <br />
+        <br />
+        <input
+          type="button"
+          value="Order Now"
+          onclick="window.location.href='/Manufacturing/orderlist.php';"
+        />
+      </div>
+      <div class="food">
+        <img src="classic.jpg" width="150px" height="100px" />
+        <br />
+        <h3>Classic Roadster</h3>
+        <br />
+        <br />
+        <input
+          type="button"
+          value="Order Now"
+          onclick="window.location.href='/Manufacturing/orderlist.php';"
+        />
+      </div>
+      <div class="food">
+        <img src="sports.jpg" width="150px" height="100px" />
+        <br />
+        <h3>Sports Car #1</h3>
+        <br />
+        <br />
+        <input
+          type="button"
+          value="Order Now"
+          onclick="window.location.href='/Manufacturing/orderlist.php';"
+        />
+      </div>
+      <div class="loadmorepizza">
+        <img src="sports1.jpg" width="150px" height="100px" />
+        <br />
+        <h3>Sports Car #2</h3>
+        <br />
+        <br />
+        <input
+          type="button"
+          value="Order Now"
+          onclick="window.location.href='/Manufacturing/orderlist.php';"
+        />
+      </div>
+      <div class="loadmorepizza">
+        <img src="porsche.jpg" width="150px" height="100px" />
+        <br />
+        <h3>Porsche</h3>
+        <br />
+        <br />
+        <input
+          type="button"
+          value="Order Now"
+          onclick="window.location.href='/Manufacturing/orderlist.php';"
+        />
+      </div>
+      <div class="loadmorepizza">
+        <img src="inde.jpg" width="150px" height="100px" />
+        <br />
+        <h3>Inde</h3>
+        <br />
+        <br />
+        <input
+          type="button"
+          value="Order Now"
+          onclick="window.location.href='/Manufacturing/orderlist.php';"
+        />
+      </div>
+      <div class="loadmorepizza">
+        <img src="pickup.jpg" width="150px" height="100px" />
+        <br />
+        <h3>Ton Pickup</h3>
+        <br />
+        <br />
+        <input
+          type="button"
+          value="Order Now"
+          onclick="window.location.href='/Manufacturing/orderlist.php';"
+        />
+      </div>
+      <button
+        id="loadmorepizzabtn"
+        class="loadmorebtn"
+        onClick="loadMorePizzas()"
+      >
+        Load More
+      </button>
+    </div>
+    <br />
+    <br />
+
+    <script>
+      function loadMorePizzas() {
+        var array1 = document.getElementsByClassName("loadmorepizza");
+        for (let i = 0; i < array1.length; i++) {
+          array1[i].style.cssText =
+            "border:1px solid crimson;display:inline-block;margin:25px 25px;padding:20px 20px;border-radius: 5px;text-align: center";
+        }
+        document.getElementById("loadmorepizzabtn").style.display = "none";
+      }
+
+      function loadMoreBurgers() {
+        var array2 = document.getElementsByClassName("loadmoreburger");
+        for (let j = 0; j < array2.length; j++) {
+          array2[j].style.cssText =
+            "border:1px solid crimson;display:inline-block;margin:25px 25px;padding:20px 20px;border-radius: 5px;text-align: center";
+        }
+        document.getElementById("loadmoreburgerbtn").style.display = "none";
+      }
+
+      function loadMoreDrinks() {
+        var array3 = document.getElementsByClassName("loadmoredrink");
+        for (let k = 0; k < array3.length; k++) {
+          array3[k].style.cssText =
+            "border:1px solid crimson;display:inline-block;margin:25px 25px;padding:20px 20px;border-radius: 5px;text-align: center";
+        }
+        document.getElementById("loadmoredrinkbtn").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
