@@ -47,12 +47,11 @@ if ($result) {
 		<table>
 			<thead>
 				<tr align="center">
-					<th>firstName</th>
-					<th>lastName</th>
-					<th>Order_ID</th>
-					<th>Product_Name</th>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Order ID</th>
+					<th>Product Name</th>
 					<th>Quantity</th>
-					<th>Status</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -72,9 +71,6 @@ if ($result) {
 						</td>
 						<td>
 							<?php echo $row['Quantity']; ?>
-						</td>
-						<td>
-							<?php echo $row['status']; ?>
 						</td>
 					</tr>
 				<?php endforeach; ?>
